@@ -1,0 +1,28 @@
+# Segredos
+.env
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+
+# Certificados digitais reais (a pasta fica so com o LEIA-ME)
+Certificados/*
+!Certificados/LEIA-ME.txt
+
+# Saidas dos robos
+json_ironhide/
+logs/
+*.log
+senatran_*.xlsx
+captcha*.png
+
+# Controle manual de empresas (CNPJs reais) -- usar exemplos/empresas_ativas.exemplo.csv
+empresas_ativas*.csv
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/

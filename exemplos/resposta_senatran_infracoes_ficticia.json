@@ -1,0 +1,51 @@
+{
+  "code": 200,
+  "code_message": "A requisição foi processada com sucesso.",
+  "header": {
+    "api_version": "v2",
+    "api_version_full": "2.0.0-exemplo",
+    "product": "Consultas",
+    "service": "senatran/infracoes",
+    "parameters": {
+      "cnpj": "11111111000111",
+      "data_fim": "",
+      "data_inicio": "",
+      "pkcs12_cert_md5": "00000000000000000000000000000000",
+      "pkcs12_pass_md5": "00000000000000000000000000000000",
+      "placa": "ABC1D23"
+    },
+    "client_name": "CLIENTE EXEMPLO",
+    "token_name": "TOKEN EXEMPLO",
+    "billable": true,
+    "price": "0.24",
+    "requested_at": "2026-11-04T08:30:12.000-03:00",
+    "elapsed_time_in_milliseconds": 15234,
+    "remote_ip": "0.0.0.0",
+    "signature": "ASSINATURA-FICTICIA"
+  },
+  "data_count": 1,
+  "data": [
+    {
+      "infracoes": [
+        {
+          "placa": "ABC1D23",
+          "codigo_orgao_autuador": "000100",
+          "auto_infracao": "X000000001",
+          "codigo_infracao": "7455",
+          "descricao": "TRANSITAR EM VELOCIDADE SUPERIOR A MAXIMA PERMITIDA EM ATE 20%",
+          "valor_total": 130.16,
+          "datahora": "12/09/2026 14:35:00",
+          "data_vencimento": "20/11/2026",
+          "chave_infracao": "000100X000000001",
+          "situacao": "NAO_PAGAS_A_VENCER"
+        }
+      ],
+      "total_infracoes": 1,
+      "site_receipt": "https://exemplo.invalid/comprovante-ficticio.html"
+    }
+  ],
+  "errors": [],
+  "site_receipts": [
+    "https://exemplo.invalid/comprovante-ficticio.html"
+  ]
+}

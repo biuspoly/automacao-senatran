@@ -1,0 +1,5 @@
+Pasta dos certificados digitais e-CNPJ A1 (.pfx) das empresas.
+
+Fica VAZIA no repositorio publico: certificado e senha nunca sao versionados
+(ver .gitignore). Para rodar de verdade, coloque aqui os .pfx validos com o
+CNPJ no nome do arquivo e informe a(s) senha(s) no .env.

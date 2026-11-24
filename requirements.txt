@@ -1,0 +1,24 @@
+# Dependencias dos robos (TRANSFORMER -> MEGATRON/OPTIMUS PRIME -> DETRAN,
+# BUMBLEBEE, IRONHIDE, ATUALIZA_FIPE).
+
+# pydoll: OPTIMUS PRIME.py, MEGATRON.py e DETRAN.py usam a API antiga
+# (pydoll.browser.chrome / pydoll.constants.By), presente ate a serie 1.x.
+# NAO atualizar para 2.x sem revisar esses scripts, pois a API mudou.
+pydoll-python==1.5.0
+
+pandas==2.2.3
+pyarrow==17.0.0          # Parquet (substitui o MySQL na versao publica)
+python-dotenv==1.0.1     # le o .env com token/senhas
+cryptography==44.0.1
+requests==2.32.5
+PyAutoGUI==0.9.54
+pdfplumber==0.11.5
+openpyxl==3.1.5
+selenium==4.29.0
+webdriver-manager==4.0.2
+pytesseract==0.3.13
+pillow==11.1.0
+aes-everywhere==1.2.10
+
+# Fora do Python: Google Chrome, Tesseract-OCR e R (pacotes tesseract, magick, png)
+# para os captchas de alguns DETRANs (image2text.R).

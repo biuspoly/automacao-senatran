@@ -1,0 +1,55 @@
+{
+  "code": 200,
+  "code_message": "A requisição foi processada com sucesso.",
+  "header": {
+    "api_version": "v2",
+    "product": "Consultas",
+    "service": "detran/pi/veiculo",
+    "parameters": {
+      "placa": "TST8H88",
+      "renavam": "00000000098"
+    },
+    "billable": true,
+    "price": "0.24",
+    "requested_at": "2026-11-04T09:02:41.000-03:00",
+    "elapsed_time_in_milliseconds": 9876
+  },
+  "data_count": 1,
+  "data": [
+    {
+      "veiculo": {
+        "placa": "TST8H88",
+        "renavam": "00000000098",
+        "chassi": "CHASSIFICTICIO009",
+        "tipo": "MOTOCICLETA",
+        "marca_modelo": "HONDA/CG 160 FAN",
+        "ano_fabricacao": "2022 / 2023",
+        "combustivel": "ALCOOL/GASOLINA",
+        "restricao": "SEM RESTRICAO"
+      },
+      "debitos": [
+        {
+          "lista": [
+            {"debito": "Taxa de Licenciamento"}
+          ],
+          "normalizado_total": 160.22
+        }
+      ],
+      "infracoes": [
+        {
+          "auto_infracao": "Z000000003",
+          "renainf": "000300Z000000003",
+          "orgao_autuador": "(000300)DEPARTAMENTO ESTADUAL DE TRANSITO EXEMPLO",
+          "descricao": "(5010-0) DIRIGIR SEM POSSUIR CNH/PPD/ACC",
+          "local": "AV EXEMPLO, 100 - CIDADE EXEMPLO / PI",
+          "data_infracao": "21/08/2026",
+          "hora_infracao": "18:20",
+          "data_vencimento": "30/11/2026",
+          "normalizado_valor_multa": 880.41
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "site_receipts": []
+}
